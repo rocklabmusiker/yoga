@@ -2,8 +2,41 @@
 	<section class="section footer">
 	 	<div class="wrap footer__wrap">
 	 		<div class="m-wrap footer__m-wrap">
-				
-	 
+				<h4>СВЯЖИСЬ С НАМИ</h4>
+				<div class="footer__address">
+					<span class="phone"></span>
+					<span class="address"></span>
+					<span class="email"></span>
+					<div class="footer__icons">
+						<span class="twitter"></span>
+						<span class="youtube"></span>
+						<span class="skype"></span>
+						<span class="instagramm"></span>
+						<span class="facebook"></span>
+						<span class="bobo"> class=""</span>
+						<span class="petr"></span>
+					</div>
+				</div>
+	 			<div class="footer__form">
+	 				<form class="my_class__form form" action="ajax/mail.php" method="post">
+	 					<input type="text" name="name" placeholder="Ваше имя">
+	 					<input type="text" name="email" placeholder="Ваш email">
+	 					<input type="hidden" name="frmid" value="Форма в первом блоке">
+	 					<textarea placeholder="Ваше сообщение"></textarea>
+	 					<div class="footer__button">
+			 				<img src="../images/button_figure.png" alt="button">
+			 				<button type="submit">ОТПРАВИТЬ</button>
+			 			</div>
+	 				</form>
+	 				
+	 				<!-- pop up -->
+	 				<div id="hidden-box">
+	 				    <div id="form-error-pop">
+	 					<div id="form-error-text"></div>
+	 				    </div>
+	 				    <div id="okgo">Спасибо за заявку</div>	
+	 				</div>
+	 			</div>
 	 		</div>
 	 	</div>
 	</section>

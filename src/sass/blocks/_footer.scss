@@ -1,3 +1,13 @@
 @import "mixins/base-mixins";
 @import "mixins/media-mixins";
 @import "sprites/png-sprite"; 
+
+.footer {
+	background-image: url(../../images/footer_back.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: center;
+	     -o-background-size: center;
+	        background-size: center;
+	background-position: 50% 0;
+	height: 100vh;
+}
