@@ -1,0 +1,69 @@
+@import "mixins/base-mixins";
+@import "mixins/media-mixins";
+@import "sprites/png-sprite";
+
+
+*{margin:0;padding:0;box-sizing:border-box;background-position:center;background-repeat:no-repeat}
+/* :after,:before{content:"";display:block;width:100%;height:0;clear:both}
+sup:after,sup:before,a:after,a:before,br:after,br:before,img:after,img:before,span:after,span:before,table:after,table:before,td:after,td:before,tr:after,tr:before{content:none} */
+h1,h2,h3,h4,h5{font-size:1em;font-weight:inherit;text-align:center;font-family: $afont;font-weight: 300;letter-spacing: 0.01em}
+body{font-family:$fontfamily,sans-serif;font-weight:400;color: $dark;}
+a{text-decoration:none;color:inherit;outline:0!important}
+button,input,textarea{outline: none;}
+
+section {
+
+    @include sec();
+}
+
+ol, ul {
+  list-style: none;
+}
+
+
+a, img {
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#maket {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background: url(../maket.jpg) no-repeat top center;
+    height: 13200px;
+    opacity: 0.5;
+    z-index: 10;  
+}
+
+.visuelly-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow:hidden;
+}
+html, body {
+  font-size: 10px;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  font-size: 14px;
+}

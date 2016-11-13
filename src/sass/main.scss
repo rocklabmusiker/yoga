@@ -1,0 +1,27 @@
+// global
+@import "global/pre-loader";
+@import "global/page";
+@import "global/fonts";
+@import "global/fancybox";
+@import "global/modal";
+
+// mixins
+@import "mixins/base-mixins";
+@import "mixins/media-mixins";
+
+// Sprites
+@import "sprites/png-sprite";  /* To create png-sprite.sass run "gulp sprite"; */
+
+
+// blocks
+@import "blocks/offer";
+@import "blocks/team";
+@import "blocks/online";
+@import "blocks/time";
+@import "blocks/gallery";
+@import "blocks/subscribe";
+@import "blocks/price";
+@import "blocks/reason";
+@import "blocks/slider";
+@import "blocks/asans_slider";
+@import "blocks/footer";
