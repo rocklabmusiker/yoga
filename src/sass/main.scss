@@ -10,7 +10,7 @@
 @import "mixins/media-mixins";
 
 // Sprites
-@import "sprites/png-sprite";  /* To create png-sprite.sass run "gulp sprite"; */
+@import "sprites/png-sprite";  /* To create png-sprite.sass run "gulp sprite";  @include sprite($sprite)*/
 
 
 // blocks

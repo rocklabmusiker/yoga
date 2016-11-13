@@ -1,4 +1,20 @@
 
+/*menu*/
+$('.nav__list').animate({"left": "-100%"}, 600);
+$(".nav__button").click(function() {
+
+  if($(this).attr('data-click-state') == 0) {
+      $(this).attr('data-click-state',1);
+      $('.nav__list').animate({"left": "-100%"}, 600);
+     
+    }
+
+    else {
+      $(this).attr('data-click-state', 0);
+      $('.nav__list').animate({"left": "0"}, 600); 
+    }
+
+});
 
 // device detection
 var isMobile = false;
@@ -7,18 +23,17 @@ console.log('isMobile = ' + isMobile);
 
 // стабилизирует fullpage  
 function stabilize(){
+  if($(window).width() > 1000) {
+    $('section:not(:hidden)').each(function(index, el) {
+    
+      var eTop = $(this).offset().top; 
+      var posTop = eTop - $(window).scrollTop();
 
-  $('section:not(:hidden)').each(function(index, el) {
-  
-  var eTop = $(this).offset().top; 
-  var posTop = eTop - $(window).scrollTop();
-
-    if(posTop>-$(window).height()/2&&posTop<$(window).height()/2){
-      $("html, body").animate({ scrollTop: $(this).offset().top}, 250);
+      if(posTop>-$(window).height()/2&&posTop<$(window).height()/2){
+        $("html, body").animate({ scrollTop: $(this).offset().top}, 250);
+      }
+    });
   }
-
-  });
-
 }
 
 $("html, body").on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
@@ -81,7 +96,7 @@ jQuery(document).ready(function() {
    
  // scroll
 
- $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+ $('body').prepend('<a href="#" class="back-to-top"></a>');
 
  var amountScrolled = 300;
 

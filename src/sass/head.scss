@@ -1,3 +1,175 @@
 @import "mixins/base-mixins";
 @import "mixins/media-mixins";
 @import "sprites/png-sprite"; 
+
+.head {
+
+	&__top {
+		background-color: #390b46;
+		height: 120px;
+		width: 100%;
+	}
+
+	&__logo{
+		float: left;
+		margin-left: 20px;
+	}
+
+	&__logo h4{
+		color: #FFF;
+		font-size: 30px;
+		line-height: 110px;
+		padding-left: 150px;
+	}
+
+
+} // head end
+
+.nav {
+	position: relative;
+	
+	&__list {
+		float: right;
+		color: #FFF;
+		margin-right: 91px;
+	}
+
+	&__item {
+		display: inline-block;
+		line-height: 82px;
+		margin: 0 20px 0 0;
+	}
+
+	&__item--active a{
+		border-bottom: 1px solid #fff;
+		padding-bottom: 6px;
+	}
+
+
+	&__icon {
+		display: block;
+		position: relative;
+		top: 27px;
+		left: 5px;
+	}
+
+
+	&__icon-menu1 {
+		@include sprite($s-menu1)
+	}
+
+	&__icon-menu2 {
+		@include sprite($s-menu2)
+		left: 3px;
+	}
+
+	&__icon-menu3 {
+		@include sprite($s-menu3)
+		left: 15px;
+	}
+
+	&__icon-menu4 {
+		@include sprite($s-menu4)
+		left: 18px;
+	}
+
+	&__icon-menu5 {
+		@include sprite($s-menu5)
+	}
+
+	&__icon-menu6 {
+		@include sprite($s-menu6)
+		left: 15px;
+	}
+
+	&__button {
+		position: absolute;
+		z-index: 100;
+		right: 0;
+		padding: 27px;
+		top: -66px;
+		display: none;
+	}
+
+	&__button:nth-of-type(1) span::after{
+		content: '';
+		display: block;
+		width: 40px;
+		height: 2px;
+		margin-top: 10px;
+		background-color: #FFF;
+	}
+
+	&__button:nth-of-type(2) span::after{
+		content: '';
+		display: block;
+		width: 40px;
+		height: 2px;
+		margin-top: 10px;
+		background-color: #FFF;
+	}
+
+	&__button:nth-of-type(3) span::after{
+		content: '';
+		display: block;
+		width: 40px;
+		height: 2px;
+		margin-top: 10px;
+		background-color: #FFF;
+	}
+
+}
+
+@include max_980 {
+	.nav {
+		
+		
+		&__list {
+			float: none;
+			margin: 0 auto;
+			position: relative;
+			display: block;
+			background-color: #390B46;
+			width: 100%;
+			height: 450px;
+		}
+
+		&__item {
+			display: block;
+			margin: 0 auto;
+			padding: 10px 0 10px 0;
+			text-align: center;
+			line-height: 20px;
+		}
+
+		&__icon {
+			display: block;
+			position: relative;
+			top: 20px;
+			left: -75px;
+			margin: 0 auto;
+		}
+
+		&__button {
+			display: block;
+		}
+	}
+
+	.head {
+
+
+		&__logo{
+			float: none;
+			margin-left: 0;
+			padding: 38px 0 15px;
+		}
+
+		&__logo h4{
+			text-align: center;
+			line-height: 0;
+			padding-left: 0;
+		}
+
+
+} // head end
+}
