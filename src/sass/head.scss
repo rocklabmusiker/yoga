@@ -22,6 +22,77 @@
 		padding-left: 150px;
 	}
 
+	&__back {
+		background-image: url(../images/header_back.jpg);
+		background-repeat: no-repeat;
+		-webkit-background-size: center;
+		     -o-background-size: center;
+		        background-size: center;
+		background-position: 50% 0;
+		height: 100vh;
+	}
+
+	&__m-wrap h1{
+		color: #390a45;
+	    font-size: 75px;
+	    position: absolute;
+	    bottom: 190px;
+	    right: 260px;
+    	font-size: 83px;
+	    z-index: 100;
+	    font-weight: 300;
+	}
+
+	&__m-wrap span{
+	    bottom: 58px;
+	    display: block;
+	    font-size: 120px;
+	    position: absolute;
+	    right: 0;
+	    font-weight: lighter;
+	}
+
+	&__m-wrap h2{
+		color: #390a45; 
+		font-size: 20px;
+		letter-spacing: 9px;
+		position: absolute;
+	    right: 260px;
+	    bottom: 166px;
+	    z-index: 100;
+	    font-weight: 400;
+	}
+
+	&__button {
+		position: relative;
+		
+	}
+
+	&__m-wrap a{
+		color: #390a45; 
+		font-size: 20px;
+		position: absolute;
+		border: 2px solid #390a45;
+	    bottom: 160px;
+	    height: 94px;
+	    right: 410px;
+	    width: 25%;
+	    z-index: 100;
+	    font-weight: 400;
+	    text-align: center;
+	    line-height: 94px;
+	    min-width: 300px;
+	}
+
+	&__m-wrap img{
+		bottom: 157px;
+	    display: block;
+	    position: absolute;
+	    right: 361px;
+	    width: 100px;
+	    z-index: 1000;
+	}
+
 
 } // head end
 
