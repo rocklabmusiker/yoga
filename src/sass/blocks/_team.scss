@@ -1,3 +1,70 @@
 @import "mixins/base-mixins";
 @import "mixins/media-mixins";
 @import "sprites/png-sprite"; 
+
+.team {
+	
+	&__m-wrap img{
+		text-align: center;
+		width: 90px;
+		display: block;
+		margin: 140px auto 0;
+	}
+	
+	&__m-wrap h3{
+		text-align: center;
+		padding-top: 25px;
+		font-weight: 400;
+	}
+
+	&__m-wrap p{
+		text-align: center;
+		padding-top: 45px;
+	}
+
+	&__content {
+		display: flex;
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap; 
+		-webkit-align-items: center;
+		        align-items: center;
+		margin-top: 30px;
+	}
+
+	&__item {
+		max-width: 330px;
+		min-width: 300px;
+		padding: 10px;
+		text-align: left;
+	}
+
+	&__item img{
+		margin: 0 auto;
+		width: 235px;
+	}
+
+	&__item h4{
+		text-align: left;
+		font-size: 20px;
+		padding: 10px 38px 0;
+		font-weight: 400;
+	}
+
+	&__item span{
+		text-align: left;
+		padding: 20px 38px 10px 38px;
+		display: block;
+		font-size: 12px;
+		text-decoration: underline;
+	}
+
+	&__item p{
+		text-align: left;
+		padding-top: 10px;
+		padding: 10px 38px 0;
+	}
+
+}

@@ -1,3 +1,25 @@
 @import "mixins/base-mixins";
 @import "mixins/media-mixins";
 @import "sprites/png-sprite"; 
+
+.gallery {
+	
+	&__m-wrap img{
+		text-align: center;
+		width: 90px;
+		display: block;
+		margin: 140px auto 0;
+	}
+	
+	&__m-wrap h3{
+		text-align: center;
+		padding-top: 25px;
+		font-weight: 400;
+	}
+
+	&__m-wrap p{
+		text-align: center;
+		padding-top: 45px;
+	}
+
+}

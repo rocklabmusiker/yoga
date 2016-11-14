@@ -1,3 +1,41 @@
 @import "mixins/base-mixins";
 @import "mixins/media-mixins";
 @import "sprites/png-sprite"; 
+
+.time {
+	
+	&__m-wrap img{
+		text-align: center;
+		width: 90px;
+		display: block;
+		margin: 140px auto 0;
+	}
+	
+	&__m-wrap h3{
+		text-align: center;
+		padding-top: 25px;
+		font-weight: 400;
+	}
+
+	&__m-wrap p{
+		text-align: center;
+		padding-top: 45px;
+	}
+
+	&__content {
+		display: flex;
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;
+		-webkit-align-items: center;
+		        align-items: center;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+
+	&__content img {
+		width: 291px;
+		margin: 0 auto;
+	}
+
+}

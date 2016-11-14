@@ -11,4 +11,51 @@
 	background-position: 50% 0;
 	height: 100vh;
 	z-index: 100;
+	
+	&__m-wrap h4{
+	    bottom: 460px;
+	    color: #390a45;
+	    font-size: 75px;
+	    font-weight: 400;
+	    left: 102px;
+	    position: absolute;
+	    z-index: 100;
+
+	}
+
+	&__m-wrap span{
+	   display: block;
+	  	font-size: 120px; 
+		left: 0;
+		position: absolute;
+		bottom: 80px;
+	}
+
+	&__button {
+		bottom: -530px;
+    	left: 102px;
+    	position: relative;
+	}
+
+	&__m-wrap a{
+		border: 2px solid #390a45;
+	    color: #390a45;
+	    font-size: 20px;
+	    font-weight: 400;
+	    height: 94px;
+	    line-height: 94px;
+	    min-width: 300px;
+	    position: absolute;
+	    width: 400px;
+	    z-index: 100;
+	    text-align: center;
+	}
+
+	&__m-wrap img{
+	    display: block;
+	    left: 351px;
+	    position: absolute;
+	    width: 95px;
+	    z-index: 1000;
+	}
 }

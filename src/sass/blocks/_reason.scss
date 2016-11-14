@@ -1,3 +1,161 @@
 @import "mixins/base-mixins";
 @import "mixins/media-mixins";
-@import "sprites/png-sprite"; 
+@import "sprites/png-sprite";
+
+.reason {
+	
+	&__m-wrap img{
+		text-align: center;
+		width: 90px;
+		display: block;
+		margin: 140px auto 0;
+	}
+	
+	&__m-wrap h3{
+		text-align: center;
+		padding-top: 25px;
+		font-weight: 400;
+	}
+
+	&__m-wrap p{
+		text-align: center;
+		padding-top: 45px;
+	}
+
+	&__content {
+		display: flex;
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;
+		-webkit-align-items: center;
+		        align-items: center;
+	
+	}
+
+	&__list {
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		    -webkit-justify-content: space-around;
+		            justify-content: space-around;
+		-webkit-flex-grow: 2;
+		        flex-grow: 2;
+
+	}
+
+	&__double {
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+
+	&__item {
+		display: flex;
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;
+		-webkit-align-items: center;
+		        align-items: center;
+		width: 350px;
+		margin-top: 20px;
+	}
+
+	
+	&__img img {
+		padding: 0;
+		margin: 0;
+	}
+
+	&__item-button {
+		position: relative;
+	}
+
+	&__item-button img {
+		padding: 0;
+		margin: 0;
+		left: 143px;
+		width: 40px;
+		position: absolute;
+		bottom: -3px;
+	}
+
+	&__item-button a {
+		display: block;
+		background-color: #390B46;
+		width: 165px;
+		height: 35px;
+		color: #fff;
+		text-align: center;
+		line-height: 35px;
+		margin-top: 20px;
+	}
+
+	&__phone {
+		background-image: url(../../images/reason/reason_phone_back.jpg);
+		background-repeat: no-repeat;
+		height: 333px;
+		width: 70%;
+		color: #FFF;
+		-webkit-align-self: flex-end;
+		        align-self: flex-end;
+	}
+
+	&__phone h4 {
+		font-size: 30px;
+		font-weight: bold;
+		margin-top: 30px;
+	}
+
+	&__phone span {
+		font-size: 30px;
+		font-weight: bold;
+		margin-top: 10px;
+		display: block;
+		text-align: center;
+	}
+
+	&__phone h5 {
+		font-size: 48px;
+		font-weight: bold;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	&__phone p {
+		font-weight: bold;
+		text-align: center;
+	}
+
+	&__phone-button {
+		position: relative;
+		margin: 0 auto;
+		width: 200px;
+		height: 50px;
+	}
+
+
+	&__phone-button a{
+		display: block;
+		border: 2px solid #fff;
+		width: 165px;
+		height: 35px;
+		color: #fff;
+		text-align: center;
+		margin: 20px auto 0;
+		position: absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+		line-height: 35px;
+	}
+
+	&__phone-button img{
+		margin: 0;
+	    padding: 0;
+	    position: absolute;
+	    right: 0;
+	    top: 20px;
+	    width: 35px;
+	    z-index: 100;
+	}
+
+
+} 
