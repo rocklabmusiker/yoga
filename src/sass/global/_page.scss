@@ -92,3 +92,24 @@ p {
 a {
   font-size: 14px;
 }
+
+@include max_1200 {
+    h3 {
+    font-size: 3rem;
+  }
+
+}
+
+@include max_980 {
+    h3 {
+    font-size: 2.5rem;
+  }
+  
+}
+
+@include max_600 {
+    h3 {
+    font-size: 2rem;
+  }
+  
+}

@@ -191,6 +191,45 @@
 
 }
 
+@include max_1200 {
+	.head {
+		
+		 &__m-wrap h1{
+		 	font-size: 55px;
+		 }
+
+		  &__m-wrap span{
+		 	font-size: 100px;
+		 	bottom: 38px;
+		 }
+
+		  &__m-wrap h2{
+		 	font-size: 16px;
+		 	letter-spacing: 5px;
+		 }
+
+		 &__m-wrap a {
+		    bottom: 200px;
+		    height: 60px;
+		    line-height: 60px;
+		    right: 410px;
+		    width: 250px;
+		    font-size: 16px;
+		    min-width: 0;
+		}
+
+		&__m-wrap img {
+		    bottom: 200px;
+		    right: 380px;
+		    width: 60px;
+		}
+
+
+	}
+
+}
+
+
 @include max_980 {
 	.nav {
 		
@@ -241,6 +280,91 @@
 			padding-left: 0;
 		}
 
+		 &__m-wrap h1{
+		 	font-size: 45px;
+		 	text-align: center;
+		 	right: 0;
+		 	left: 0;
+		 }
 
-} // head end
+		  &__m-wrap span{
+		 	font-size: 90px;
+		 	bottom: 38px;
+		 	text-align: center;
+		 	right: 0;
+		 	left: 0;
+		 }
+
+		  &__m-wrap h2{
+		 	font-size: 15px;
+		 	letter-spacing: 4px;
+		 	text-align: center;
+		 	right: 0;
+		 	left: 0;
+		 }
+
+		 &__m-wrap a {
+		    bottom: 200px;
+		    height: 50px;
+		    line-height: 50px;
+		    margin: 0 auto;
+		    width: 230px;
+		    font-size: 15px;
+		    min-width: 0;
+		    right: 0;
+		    left: 0;
+		}
+
+		&__m-wrap img {
+		    bottom: 200px;
+		    margin: 0 auto;
+		    width: 50px;
+		    right: -229px;
+		    left: 0;
+		}
+
+
+	} // head end
+}
+
+@include max_600 {
+	.head {
+
+		 &__m-wrap h1{
+		 	font-size: 35px;
+		 }
+
+		  &__m-wrap span{
+		 	font-size: 80px;
+		 	bottom: 38px;
+		 }
+
+		  &__m-wrap h2{
+		 	font-size: 14px;
+		 	letter-spacing: 3px;
+		 }
+
+
+	} // head end
+}
+
+@include max_480 {
+	.head {
+
+		 &__m-wrap h1{
+		 	font-size: 30px;
+		 }
+
+		  &__m-wrap span{
+		 	font-size: 70px;
+		 	bottom: 38px;
+		 }
+
+		  &__m-wrap h2{
+		 	font-size: 13px;
+		 	letter-spacing: 0;
+		 }
+
+
+	} // head end
 }

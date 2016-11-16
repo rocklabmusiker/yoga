@@ -24,14 +24,19 @@
 
 	&__content {
 		display: flex;
-		-webkit-justify-content: space-around;
-		        justify-content: space-around;
-		-webkit-flex-wrap: wrap;
-		    -ms-flex-wrap: wrap;
-		        flex-wrap: wrap; 
+		-webkit-justify-content: center;
+		        justify-content: center;
 		-webkit-align-items: center;
 		        align-items: center;
 		margin-top: 30px;
+	}
+
+	&__item-double {
+		display: flex;
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;
+		-webkit-align-items: center;
+		        align-items: center;
 	}
 
 	&__item {
@@ -105,4 +110,122 @@
 	    -ms-transition: all .5s ease;
 	     -o-transition: all .5s ease;
 	        transition: all .5s ease;
+}
+
+@include max_1200 {
+ 	.team {
+ 		 height: 1410px;
+
+ 		&__m-wrap img{
+			width: 80px;
+			margin: 60px auto 0;
+		}
+
+		&__item img{
+			margin: 0 auto;
+			width: 235px;
+		}
+
+		&__item-double {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap; 
+		}
+
+		&__item {
+			margin: 50px 0;
+			padding: 10px;
+		}
+
+		&__item h4{
+			font-size: 19px;
+		}
+
+ 	}
+
+}
+
+@include max_700-team {
+ 	.team {
+		height: 2330px;
+		
+ 		&__content {
+ 			-webkit-flex-direction: column;
+		     -ms-flex-direction: column;
+		         flex-direction: column;
+ 		}
+ 	
+		&__item-double {
+			-webkit-flex-direction: column;
+			     -ms-flex-direction: column;
+			         flex-direction: column; 
+		}
+
+		&__item {
+			margin: 20px 0;
+		}
+
+ 	}
+
+}
+
+@include max_980 {
+  .team {
+ 			
+
+ 		&__m-wrap img{
+			width: 70px;
+			margin: 60px auto 0;
+		}
+
+		&__item img{
+			margin: 0 auto;
+			width: 235px;
+		}
+
+		&__item h4{
+			font-size: 18px;
+		}
+ 	}
+  
+}
+
+@include max_600 {
+ .team {
+ 		
+ 		&__m-wrap img{
+			width: 60px;
+			margin: 60px auto 0;
+		}
+
+		&__item img{
+			margin: 0 auto;
+			width: 235px;
+		}
+
+		&__item h4{
+			font-size: 16px;
+		}
+ 	}
+  
+}
+
+@include max_480 {
+ .team {
+ 		
+ 		&__m-wrap img{
+			width: 50px;
+			margin: 60px auto 0;
+		}
+
+		&__item img{
+			margin: 0 auto;
+			width: 235px;
+		}
+
+		&__item h4{
+			font-size: 15px;
+		}
+ 	}
+  
 }

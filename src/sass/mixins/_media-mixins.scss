@@ -21,3 +21,18 @@
 		@content;
 	}
 }
+
+
+/* custom */
+
+@mixin max_700-offer {
+	@media only screen and(max-width: 700px){
+		@content;
+	}
+}
+
+@mixin max_700-team {
+	@media only screen and(max-width: 700px){
+		@content;
+	}
+}
