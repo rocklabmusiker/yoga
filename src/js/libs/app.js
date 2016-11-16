@@ -52,12 +52,33 @@ if (isMobile != true) {
 
 // fancy box
 
-$("a#single_image").fancybox();
+$("a.single_image").fancybox();
 
 
 //lazy  
 $(function() {
     $("img.lazy").lazyload();
+});
+
+
+//bxSlider
+
+$('.bxslider').bxSlider({
+  controls: false,
+  speed: 1000,
+  auto: true
+
+});
+
+
+$('.slider2').bxSlider({
+    slideWidth: 250,
+    minSlides: 7,
+    maxSlides: 7,
+    slideMargin: 14,
+    controls: false,
+    speed: 1000,
+    auto: false
 });
 
 

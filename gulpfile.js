@@ -1,3 +1,4 @@
+
 'use strict';
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
@@ -92,7 +93,7 @@ gulp.task('image:build', function () {
             interlaced: true
         }))
         .pipe(gulp.dest(path.build.img))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.stream()); 
 });
 
 gulp.task('fonts:build', function () {

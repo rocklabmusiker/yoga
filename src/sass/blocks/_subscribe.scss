@@ -5,15 +5,18 @@
 
 .subscribe {
 
-	&__wrap{
+    &__wrap {
 		background-image: url(../../images/subscribe/subscribe_back.jpg);
 		background-repeat: no-repeat;
 		-webkit-background-size: center;
 		     -o-background-size: center;
 		        background-size: center;
-		background-position: 50% 0;
+		background-position: 50% 0;	
+	}
+
+	.wrap {
 		height: 85vh;
-    	margin-top: 10%;
+    	margin: 10% auto 0;
 	}
 
 	&__list {

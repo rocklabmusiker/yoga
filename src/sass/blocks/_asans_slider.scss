@@ -22,4 +22,54 @@
 		padding-top: 45px;
 	}
 
+	&__item {
+		margin-top: 100px;
+	}
+
 } 
+
+.slide {
+	position: relative;
+}
+
+.slide img {
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.slide span{
+	position: absolute;
+	width: 100%;
+	display: block;
+	height: 235px;
+	background-color: rgba(57, 11, 70, 0.5);
+	top: 0;
+	cursor: pointer;	
+}
+
+.slide:hover span{
+	opacity: 0;
+	-webkit-transition: all .4s ease;
+	   -moz-transition: all .4s ease;
+	    -ms-transition: all .4s ease;
+	     -o-transition: all .4s ease;
+	        transition: all .4s ease;
+}
+
+.slide b,
+.slide p {
+	display: block;
+	text-align: center;
+	color: #FFF;
+	font-size: 18px;
+}
+
+.slide b {
+	font-size: 22px;
+	padding-top: 60px;
+}
+
+.slide p {
+	padding: 0;
+}

@@ -39,6 +39,7 @@
 		min-width: 300px;
 		padding: 10px;
 		text-align: left;
+		position: relative;
 	}
 
 	&__item img{
@@ -67,4 +68,41 @@
 		padding: 10px 38px 0;
 	}
 
+}
+
+.team__social {
+	position: absolute;
+	display: block;
+	bottom: 225px;
+	left: 75px;
+	opacity: 0;
+}
+
+.f {
+	display: inline-block;
+	@include sprite($s-team-f);
+}
+
+.tw {
+	display: inline-block;
+	@include sprite($s-team-tw);
+}
+
+.p {
+	display: inline-block;
+	@include sprite($s-team-p);
+}
+
+.you {
+	display: inline-block;
+	@include sprite($s-team-you);
+}
+
+.team__item:hover .team__social {
+	opacity: 1;
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
 }

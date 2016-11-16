@@ -31,11 +31,57 @@
 		-webkit-flex-wrap: wrap;
 		    -ms-flex-wrap: wrap;
 		        flex-wrap: wrap;
+		position: relative;
+		margin-top: 50px;
 	}
 
 	&__content img {
-		width: 291px;
+		width: 250px;
 		margin: 0 auto;
 	}
+
+	&__hover {
+		position: relative;
+		display: block;
+		
+	}
+
+	&__hover span{
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 410px;
+		background-color: rgba(57,11,70,.8);
+		text-align: center;
+		color: #FFF;
+		opacity: 0;
+	} 
+
+	&__hover b{
+		display: block;
+		padding-top: 20px;
+		text-align: center;
+		font-size: 16px;
+	} 
+
+	&__hover p{
+		display: block;
+		text-align: center;
+		font-size: 12px;
+		padding: 20px 10px;
+		line-height: 2;
+		font-weight: bold;
+	} 
+
+	&__hover:hover span {
+		opacity: 1;
+		-webkit-transition: all 1s ease;
+		   -moz-transition: all 1s ease;
+		    -ms-transition: all 1s ease;
+		     -o-transition: all 1s ease;
+		        transition: all 1s ease;
+		
+	}
+
 
 }
