@@ -21,19 +21,35 @@
 
 	&__list {
 		display: flex;
-		-webkit-flex-wrap: wrap;
-		    -ms-flex-wrap: wrap;
-		        flex-wrap: wrap;
+		-webkit-justify-content: center;
+	        justify-content: center;  
+		-webkit-align-items: center;
+		        align-items: center;
+		top: -127px;
+		padding: 0 10px;
+		position: relative;
+	}
+
+	&__item-double {
+		display: flex;
 		-webkit-justify-content: space-around;
 		        justify-content: space-around;
-		position: relative;
-		top: -100px;
-		padding: 0 10px;
+		    
+	
 	}
 
 	&__item {
 		text-align: center;
 		color: #FFF;
+		max-width: 280px;
+		padding: 10px;
+		-webkit-flex-grow: 1;
+		        flex-grow: 1;
+	}
+
+	&__item img{
+		width: 235px;
+		margin: 0 auto;
 	}
 
 	&__item span{
@@ -103,4 +119,293 @@
 	}
 
 
+}
+
+@include max_1200 {
+	.subscribe {
+
+		&__list {
+		    top: -100px;
+		}
+		
+		&__item img{
+		min-width: 150px;
+		width: 180px;
+		}
+
+		&__item span {
+		    font-size: 30px;
+		    padding: 10px 0;
+		}
+
+		&__item p {
+		    font-size: 25px;
+		} 
+
+		&__form h4 {
+		    font-size: 40px;
+		}
+
+		&__input {
+		    height: 80px;
+		    width: 90%;
+		}
+
+		&__input a {
+		    font-size: 22px;
+		    height: 80px;
+		    line-height: 80px;
+		    width: 35%;
+		}
+
+
+	}
+}
+
+
+@include max_980 {
+	.subscribe {
+		height: 770px;
+		
+		&__list {
+		    top: -86px;
+		}
+		
+		&__item img{
+		min-width: 100px;
+		width: 150px;
+		}
+
+		&__item span {
+		    font-size: 25px;
+		    padding: 10px 0;
+		}
+
+		&__form {
+		    margin-top: 70px;
+		} 
+
+		&__item p {
+		    font-size: 20px;
+		} 
+
+		&__form h4 {
+		    font-size: 35px;
+		}
+
+		&__input {
+		    height: 70px;
+		    width: 90%;
+		}
+
+		&__input input {
+		    height: 70px;
+		    width: 65%;
+		}
+
+		&__input img {
+		    height: 70px;
+		    right: -36px;
+		    width: 70px;
+		}
+
+		&__input a {
+		    font-size: 20px;
+		    height: 70px;
+		    line-height: 70px;
+		    width: 35%;
+		}
+
+
+	}
+}
+
+@include max_800 {
+	.subscribe {
+
+		&__list {
+		    top: -70px;
+		}
+		
+		&__item img{
+		min-width: 100px;
+		width: 120px;
+		}
+
+		&__item span {
+		    font-size: 20px;
+		    padding: 10px 0;
+		}
+
+		&__item p {
+		    font-size: 15px;
+		} 
+
+		&__form h4 {
+		    font-size: 27px;
+		}
+
+		&__input {
+		    height: 60px;
+		    width: 85%;
+		}
+
+		&__input input {
+		    height: 60px;
+		    width: 65%;
+		}
+
+		&__input img {
+		    height: 60px;
+		    right: -30px;
+		    width: 60px;
+		}
+
+		&__input a {
+		    font-size: 16px;
+		    height: 60px;
+		    line-height: 60px;
+		    width: 35%;
+		}
+
+
+	}
+}
+
+@include max_600 {
+	.subscribe {
+
+		&__list {
+		    top: -60px;
+		}
+		
+		&__item img{
+		min-width: 100px;
+		width: 100px;
+		}
+
+		&__item span {
+		    font-size: 18px;
+		    padding: 10px 0;
+		}
+
+		&__item p {
+		    font-size: 14px;
+		} 
+
+		&__form h4 {
+		    font-size: 25px;
+		}
+
+		&__input {
+		    height: 60px;
+		    width: 85%;
+		}
+
+		&__input input {
+		    height: 60px;
+		    width: 55%;
+		}
+
+		&__input img {
+		    height: 60px;
+		    right: -30px;
+		    width: 60px;
+		}
+
+		&__input a {
+		    font-size: 14px;
+		    height: 60px;
+		    line-height: 60px;
+		    width: 45%;
+		}
+
+
+	}
+}
+
+@include max_480 {
+
+	.subscribe {
+
+		&__list {
+		    top: -80px;
+		    -webkit-flex-direction: column;
+		        -ms-flex-direction: column;
+		            flex-direction: column;
+		}
+
+		.wrap {
+	    	margin: 17% auto 0;
+		}
+
+		&__item {
+		    margin-top: 20px;
+		}
+		
+		&__item img{
+		min-width: 100px;
+		width: 100px;
+		}
+
+		&__item span {
+		    font-size: 18px;
+		    padding: 10px 0;
+		}
+
+		&__form {
+		    margin-top: -45px;
+		}
+
+		&__item p {
+		    font-size: 14px;
+		} 
+
+		&__form h4 {
+		    font-size: 20px;
+		}
+
+		&__input {
+		    height: 60px;
+		    width: 95%;
+		}
+
+		&__input input {
+		    height: 60px;
+		    width: 55%;
+		}
+
+		&__input img {
+		    opacity: 0;  
+		}
+
+		&__input a {
+		    font-size: 12px;
+		    height: 60px;
+		    line-height: 60px;
+		    width: 45%;
+		}
+
+	}
+
+	.section.subscribe {
+		height: 800px;
+	}
+
+	.section .wrap.subscribe__wrap {
+		height: 800px;
+	}
+}
+
+
+@include max_320 {
+
+
+	.section.subscribe {
+		height: 750px;
+	}
+
+	.section .wrap.subscribe__wrap {
+		height: 750px;
+	}
 }

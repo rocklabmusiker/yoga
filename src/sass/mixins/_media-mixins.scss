@@ -1,3 +1,11 @@
+
+@mixin max_1500 {
+	@media only screen and(max-width: 1500px){
+		@content;
+	}
+}
+
+
 @mixin max_1200 {
 	@media only screen and(max-width: 1200px){
 		@content;
@@ -10,8 +18,21 @@
 	}
 }
 
+@mixin max_800 {
+	@media only screen and(max-width: 801px){
+		@content;
+	}
+}
+
+
+@mixin max_700 {
+	@media only screen and(max-width: 700px){
+		@content;
+	}
+}
+
 @mixin max_600 {
-	@media only screen and(max-width: 600px){
+	@media only screen and(max-width: 601px){
 		@content;
 	}
 }
@@ -22,17 +43,13 @@
 	}
 }
 
+@mixin max_320 {
+	@media only screen and(max-width: 320px){
+		@content;
+	}
+}
+
 
 /* custom */
 
-@mixin max_700-offer {
-	@media only screen and(max-width: 700px){
-		@content;
-	}
-}
 
-@mixin max_700-team {
-	@media only screen and(max-width: 700px){
-		@content;
-	}
-}

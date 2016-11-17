@@ -112,13 +112,34 @@
 	        transition: all .5s ease;
 }
 
+@include max_1500 {
+ 	.team {
+ 		
+ 		&__item h4{
+ 			font-size: 19px;
+ 		}
+
+ 		&__m-wrap img{
+			width: 85px;
+			margin: 20px auto 0;
+		}
+
+		&__item img{
+			margin: 0 auto;
+			width: 235px;
+		}
+ 	}
+
+}
+
+
 @include max_1200 {
  	.team {
  		 height: 1410px;
 
  		&__m-wrap img{
 			width: 80px;
-			margin: 60px auto 0;
+			margin: 40px auto 0;
 		}
 
 		&__item img{
@@ -145,7 +166,7 @@
 
 }
 
-@include max_700-team {
+@include max_700 {
  	.team {
 		height: 2330px;
 		
@@ -175,7 +196,7 @@
 
  		&__m-wrap img{
 			width: 70px;
-			margin: 60px auto 0;
+			margin: 40px auto 0;
 		}
 
 		&__item img{
@@ -195,7 +216,7 @@
  		
  		&__m-wrap img{
 			width: 60px;
-			margin: 60px auto 0;
+			margin: 40px auto 0;
 		}
 
 		&__item img{
@@ -215,7 +236,7 @@
  		
  		&__m-wrap img{
 			width: 50px;
-			margin: 60px auto 0;
+			margin: 40px auto 0;
 		}
 
 		&__item img{

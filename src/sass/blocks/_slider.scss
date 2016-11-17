@@ -18,6 +18,12 @@
 }
 
 
+@include max_800 {
+    .slider {
+      display: none;
+    }
+}
+
 /** VARIABLES 
 ===================================*/
 /** RESET AND LAYOUT

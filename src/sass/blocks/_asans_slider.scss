@@ -73,3 +73,73 @@
 .slide p {
 	padding: 0;
 }
+
+@include max_1500 {
+    .asans_slider {
+        
+        &__item h4{
+            font-size: 19px;
+        }
+
+        &__m-wrap img{
+            width: 85px;
+            margin: 20px auto 0;
+        }
+
+    }
+
+    .slide img {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+@include max_1200 {
+ 	.asans_slider {
+ 		
+ 		&__item h4{
+ 			font-size: 18px;
+ 		}
+
+ 		&__m-wrap img{
+			width: 80px;
+			margin: 40px auto 0;
+		}
+ 	}
+
+ 	.slide img {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+@include max_980 {
+  .asans_slider {
+ 		
+ 		&__item h4{
+ 			font-size: 17px;
+ 		}
+
+ 		&__m-wrap img{
+			width: 70px;
+			margin: 40px auto 0;
+		}
+ 	}
+
+ 	.slide img {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+  
+}
+
+@include max_800 {
+    .asans_slider {
+      display: none;
+    }
+}

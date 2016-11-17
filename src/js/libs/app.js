@@ -23,7 +23,7 @@ console.log('isMobile = ' + isMobile);
 
 // стабилизирует fullpage  
 function stabilize(){
-  if($(window).width() > 1000) {
+  if($(window).width() > 1200) {
     $('section:not(:hidden)').each(function(index, el) {
     
       var eTop = $(this).offset().top; 

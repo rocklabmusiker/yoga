@@ -3,7 +3,10 @@
 @import "sprites/png-sprite"; 
 
 .head {
-
+	&__wrap {
+		position: relative;
+	}
+	
 	&__top {
 		background-color: #390b46;
 		height: 120px;
@@ -84,12 +87,12 @@
 	    min-width: 300px;
 	}
 
-	&__m-wrap img{
-		bottom: 157px;
+	&__m-wrap img {
+	    bottom: 159px;
 	    display: block;
 	    position: absolute;
-	    right: 361px;
-	    width: 100px;
+	    right: 363px;
+	    width: 95px;
 	    z-index: 1000;
 	}
 
@@ -191,6 +194,23 @@
 
 }
 
+@include max_1500 {
+ 	.head {
+ 		&__m-wrap h1 {
+		    bottom: 280px;
+		}
+
+		&__m-wrap h2 {
+		    bottom: 240px;
+		}
+
+		&__button {
+		    bottom: 70px;
+		}
+ 	}
+
+}
+
 @include max_1200 {
 	.head {
 		
@@ -242,6 +262,7 @@
 			background-color: #390B46;
 			width: 100%;
 			height: 450px;
+			z-index: 10000;
 		}
 
 		&__item {
@@ -280,30 +301,40 @@
 			padding-left: 0;
 		}
 
-		 &__m-wrap h1{
+		&__back {
+			height: 750px;
+		}
+
+		&__m-wrap h1 {
 		 	font-size: 45px;
 		 	text-align: center;
 		 	right: 0;
 		 	left: 0;
+		 	bottom: 880px;
 		 }
 
-		  &__m-wrap span{
+		&__m-wrap span{
 		 	font-size: 90px;
-		 	bottom: 38px;
+		 	bottom: 30px;
 		 	text-align: center;
 		 	right: 0;
 		 	left: 0;
 		 }
 
-		  &__m-wrap h2{
+		&__m-wrap h2{
 		 	font-size: 15px;
 		 	letter-spacing: 4px;
 		 	text-align: center;
 		 	right: 0;
 		 	left: 0;
+		 	bottom: 400px;
 		 }
 
-		 &__m-wrap a {
+		&__button {
+		    bottom: 150px;
+		}
+
+		&__m-wrap a {
 		    bottom: 200px;
 		    height: 50px;
 		    line-height: 50px;
@@ -323,15 +354,39 @@
 		    left: 0;
 		}
 
-
 	} // head end
+	
+	.section.head {
+		height: 750px;
+	}
+
 }
+
+@include max_800 {
+	.head {
+
+		&__m-wrap h1 {
+		    bottom: 620px;
+		}
+
+		&__m-wrap h2 {
+		    bottom: 588px;
+		}
+
+		&__button {
+		    bottom: 102px;
+		}
+	}
+}
+
+
 
 @include max_600 {
 	.head {
 
 		 &__m-wrap h1{
 		 	font-size: 35px;
+		 	bottom: 550px;
 		 }
 
 		  &__m-wrap span{
@@ -342,6 +397,7 @@
 		  &__m-wrap h2{
 		 	font-size: 14px;
 		 	letter-spacing: 3px;
+		 	bottom: 525px;
 		 }
 
 
@@ -353,6 +409,7 @@
 
 		 &__m-wrap h1{
 		 	font-size: 30px;
+		 	bottom: 320px;
 		 }
 
 		  &__m-wrap span{
@@ -363,7 +420,41 @@
 		  &__m-wrap h2{
 		 	font-size: 13px;
 		 	letter-spacing: 0;
+		 	bottom: 300px;
 		 }
+
+		 &__button {
+		    bottom: 150px;
+		}
+
+
+	} // head end
+}
+
+
+@include max_320 {
+	.head {
+
+		 &__m-wrap h1{
+		 	font-size: 30px;
+		 	bottom: 36%;
+    		top: 54%;
+		 }
+
+		  &__m-wrap span{
+		 	font-size: 70px;
+		 	/* bottom: 38px; */
+		 }
+
+		  &__m-wrap h2{
+		 	font-size: 13px;
+		 	letter-spacing: 0;
+		 	bottom: 36%;
+		 }
+
+		 &__button {
+		    bottom: 230px;
+		}
 
 
 	} // head end

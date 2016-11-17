@@ -63,7 +63,8 @@
 @include max_1200 {
 
 	.online {
-
+		height: 800px;
+		
 		&__m-wrap h4{
 	    bottom: 460px;
 	    font-size: 65px;
@@ -79,6 +80,14 @@
 		&__button {
 			bottom: -530px;
 	    	left: 102px;
+		}
+
+		&__m-wrap h4 {
+		    bottom: 530px;
+		}
+
+		&__button {
+		    bottom: -446px;
 		}
 
 		&__m-wrap a{
@@ -102,9 +111,10 @@
 @include max_980 {
 
 	.online {
-
+		height: 600px;
+		
 		&__m-wrap h4{
-	    bottom: 460px;
+	    bottom: 770px;
 	    font-size: 45px;
 	    left: 0;
 	    right: 0;
@@ -120,11 +130,12 @@
 		}
 
 		&__button {
-			bottom: -530px;
+			bottom: -300px;
 	    	left: 0;
 	    	right: 0;
 	    	margin: 0 auto;
 		}
+
 
 		&__m-wrap a{
 		    font-size: 19px;
@@ -148,17 +159,55 @@
 
 }
 
+@include max_800 {
+	.online {
+
+		&__m-wrap span {
+			bottom: 35px;
+		    font-size: 70px;
+		}
+
+		&__m-wrap h4 {
+		    bottom: 770px;
+		    font-size: 35px;
+		}
+
+		&__button {
+		    bottom: -317px;
+		}
+
+		&__m-wrap a {
+		    font-size: 18px;
+		    height: 70px;
+		    line-height: 70px;
+		    width: 266px;
+		}
+
+		&__m-wrap img {
+		    right: -266px;
+		    width: 70px;
+		}	
+    
+	}
+}
+
 @include max_600 {
 
 	.online {
-
+		height: 600px;
+		
 		&__m-wrap h4{
 	    	font-size: 35px;
+	    	bottom: 700px;
 		}
 
 		&__m-wrap span{
 		  	font-size: 80px;
 		  	bottom: 38px; 
+		}
+
+		&__button {
+		    bottom: -350px;
 		}
 
 
@@ -181,14 +230,20 @@
 @include max_480 {
 
 	.online {
-
+		height: 600px;
+		
 		&__m-wrap h4{
 	    	font-size: 25px;
+	    	bottom: 420px;
 		}
 
 		&__m-wrap span{
 		  	font-size: 50px;
 		  	bottom: 30px; 
+		}
+
+		&__button {
+		    bottom: -335px;
 		}
 
 
@@ -203,6 +258,24 @@
 		    width: 40px;
 		    right: -200px;
 		}	 
+
+	}
+
+}
+
+@include max_320 {
+
+	.online {
+		height: 400px;
+		
+		&__m-wrap h4{
+	    	bottom: 53%;
+    		top: 40%;
+		}
+
+		/* &__button {
+		    bottom: -300px;
+		} */
 
 	}
 

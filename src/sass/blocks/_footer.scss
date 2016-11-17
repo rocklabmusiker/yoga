@@ -20,7 +20,7 @@
 	}
 
 	&__address {
-		margin: 60px 0 0 200px;
+		margin: 60px 0 0 100px;
 		font-size: 18px;
 		color: #390B46;
 	}
@@ -29,6 +29,7 @@
 		display: block;
 		padding: 5px;
 	}
+
 
 	&__form {
 		display: block;
@@ -90,6 +91,13 @@
 	margin:  40px 10px 0 10px;
 	cursor: pointer;
 }
+
+.footer__icons{
+	float: left;
+	margin:  0;
+}
+
+
 .twitter {
 	display: inline-block;
 	@include sprite($s-footer-soc1);
@@ -128,4 +136,228 @@
 
 #hidden-box {
 	display: none;
+}
+
+@include max_1200 {
+	.footer {
+		&__m-wrap h4 {
+		    font-size: 70px;
+		    margin-top: 65px;
+		}
+
+		&__address {
+		    font-size: 18px;
+		    margin: 30px auto 50px;
+		    text-align: center;
+		}
+
+		&__icons {
+		    margin: -30px auto 0;
+		    max-width: 420px;
+		    text-align: center;
+		    float: none;
+		}
+
+		&__form {
+		    display: block;
+		    float: none;
+		    margin: 120px auto;
+		}
+
+		&__form button {
+		    font-size: 22px;
+		    height: 70px;
+		    margin: 0 auto;
+		    width: 560px;
+		}
+
+		&__form img {
+		    left: 0;
+		    margin: 0 auto;
+		    padding-left: 0;
+		    padding-right: 0;
+		    position: absolute;
+		    right: -558px;
+		    width: 70px;
+		}
+
+
+	}
+}
+
+@include max_980 {
+	.footer {
+		&__m-wrap h4 {
+		    font-size: 50px;
+		    margin-top: 65px;
+		}
+
+		&__address {
+		    font-size: 17px;
+		    margin: 30px auto 50px;
+		    text-align: center;
+		}
+
+		&__icons {
+		    margin: -30px auto 0;
+		    max-width: 420px;
+		    text-align: center;
+		    float: none;
+		}
+
+		&__form {
+		    display: block;
+		    float: none;
+		    margin: 120px auto;
+		}
+
+		&__form input {
+		    margin: 10px auto;
+		    width: 450px;
+		}
+
+		&__form textarea {
+		    margin: 10px auto;
+		    width: 450px;
+		}
+
+		&__form button {
+		    font-size: 20px;
+		    height: 70px;
+		    margin: 0 auto;
+		    width: 450px;
+		}
+
+		&__form img {
+		    left: 0;
+		    margin: 0 auto;
+		    padding-left: 0;
+		    padding-right: 0;
+		    position: absolute;
+		    right: -453px;
+		    width: 70px;
+		}
+
+
+	}
+}
+
+@include max_600 {
+	.footer {
+		&__m-wrap h4 {
+		    font-size: 40px;
+		    margin-top: 65px;
+		}
+
+		&__address {
+		    font-size: 16px;
+		    margin: 30px auto 50px;
+		    text-align: center;
+		}
+
+		&__icons {
+		    margin: -30px auto 0;
+		    max-width: 420px;
+		    text-align: center;
+		    float: none;
+		}
+
+		&__form {
+		    display: block;
+		    float: none;
+		    margin: 120px auto;
+		}
+
+		&__form input {
+		    margin: 10px auto;
+		    width: 400px;
+		    height: 60px;
+		}
+
+		&__form textarea {
+		    margin: 10px auto;
+		    width: 400px;
+		    height: 60px;
+		}
+
+		&__form button {
+		    font-size: 16px;
+		    height: 60px;
+		    margin: 0 auto;
+		    width: 400px;
+		}
+
+		&__form img {
+		   opacity: 0;
+		}
+
+
+	}
+}
+
+@include max_480 {
+	.footer {
+		&__m-wrap h4 {
+		    font-size: 30px;
+		    margin-top: 50px;
+		}
+
+		&__address {
+		    font-size: 16px;
+		    margin: 30px auto 50px;
+		    text-align: center;
+		}
+
+		&__icons {
+		    margin: -30px auto 0;
+		    max-width: 400px;
+		    text-align: center;
+		    float: none;
+		}
+
+		&__form {
+		    display: block;
+		    float: none;
+		    margin: 120px auto;
+		}
+
+		&__form input {
+		    margin: 10px auto;
+		    width: 95%;
+		    height: 60px;
+		}
+
+		&__form textarea {
+		    margin: 10px auto;
+		    width: 95%;
+		    height: 60px;
+		}
+
+		&__form button {
+		    font-size: 16px;
+		    height: 60px;
+		    margin: 0 auto;
+		    width: 95%;
+		}
+
+		&__form img {
+		   opacity: 0;
+		}
+	}
+	.footer__icons {
+	    margin: 16px auto 0;
+	    text-align: center;
+	    float: none;
+	}
+
+	.footer__icons span{
+		margin: 5px 8px;
+	}
+}
+
+
+@include max_320 {
+	.form {
+		margin: 0 0 -10px;
+	}
 }

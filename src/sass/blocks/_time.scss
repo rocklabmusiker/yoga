@@ -38,6 +38,7 @@
 	&__content img {
 		width: 250px;
 		margin: 0 auto;
+		max-width: 230px;
 	}
 
 	&__hover {
@@ -85,3 +86,119 @@
 
 
 }
+
+@include max_1500 {
+ 	.time {
+ 		
+ 		&__item h4{
+ 			font-size: 19px;
+ 		}
+
+ 		&__m-wrap img{
+			width: 85px;
+			margin: 20px auto 0;
+		}
+
+		&__content img {
+			width: 250px;
+			margin: 0 auto;
+			max-width: 250px;
+		}
+ 	}
+
+}
+
+
+@include max_1200 {
+ 	.time {
+ 		height: 1170px;
+ 		
+ 		&__item h4{
+ 			font-size: 18px;
+ 		}
+
+ 		&__m-wrap img{
+			width: 80px;
+			margin: 40px auto 0;
+		}
+
+		&__content img {
+			width: 250px;
+			margin: 0 auto;
+			max-width: 250px;
+		}
+ 	}
+
+}
+
+@include max_980 {
+    .time {
+ 		
+ 		&__item h4{
+ 			font-size: 17px;
+ 		}
+
+ 		&__m-wrap img{
+			width: 70px;
+			margin: 40px auto 0;
+		}
+
+		&__content img {
+			width: 250px;
+			margin: 0 auto;
+		}
+ 	}
+  
+}
+
+@include max_800 {
+    .time {
+		height: 2400px;
+		
+ 		&__content {
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		}
+ 		
+ 	}
+  
+}
+
+@include max_600 {
+    .time {
+ 		
+ 		&__item h4{
+ 			font-size: 16px;
+ 		}
+
+ 		&__m-wrap img{
+			width: 60px;
+			margin: 40px auto 0;
+		}
+
+		&__content img {
+			width: 250px;
+			margin: 0 auto;
+		}
+ 	}
+  
+}
+
+@include max_480 {
+    .time {
+ 		
+
+ 		&__m-wrap img{
+			width: 50px;
+			margin: 40px auto 0;
+		}
+
+		&__content img {
+			width: 250px;
+			margin: 0 auto;
+		}
+ 	}
+  
+}
+
