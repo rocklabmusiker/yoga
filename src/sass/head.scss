@@ -28,9 +28,9 @@
 	&__back {
 		background-image: url(../images/header_back.jpg);
 		background-repeat: no-repeat;
-		-webkit-background-size: center;
-		     -o-background-size: center;
-		        background-size: center;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
 		background-position: 50% 0;
 		height: 100vh;
 	}
@@ -38,20 +38,20 @@
 	&__m-wrap h1{
 		color: #390a45;
 	    font-size: 75px;
-	    position: absolute;
-	    bottom: 190px;
-	    right: 260px;
+	    position: relative;
+	    bottom: 590px;
+		right: -270px;
     	font-size: 83px;
 	    z-index: 100;
 	    font-weight: 300;
 	}
 
 	&__m-wrap span{
-	    bottom: 58px;
+	    bottom: -27px;
+    	right: 244px;
 	    display: block;
 	    font-size: 120px;
-	    position: absolute;
-	    right: 0;
+	    position: relative;
 	    font-weight: lighter;
 	}
 
@@ -59,15 +59,17 @@
 		color: #390a45; 
 		font-size: 20px;
 		letter-spacing: 9px;
-		position: absolute;
-	    right: 260px;
-	    bottom: 166px;
+		position: relative;
+	    bottom: 590px;
+    	right: -262px;
 	    z-index: 100;
 	    font-weight: 400;
 	}
 
 	&__button {
 		position: relative;
+		bottom: 295px;
+		right: -105px;
 		
 	}
 
@@ -197,15 +199,23 @@
 @include max_1500 {
  	.head {
  		&__m-wrap h1 {
-		    bottom: 280px;
+		    bottom: 590px;
+		    right: -149px;
+		}
+
+		&__m-wrap span {
+		    bottom: -27px;
+    		right: 244px;
 		}
 
 		&__m-wrap h2 {
-		    bottom: 240px;
+		    bottom: 590px;
+    		right: -141px;
 		}
 
 		&__button {
-		    bottom: 70px;
+		    bottom: 295px;
+		    right: 0;
 		}
  	}
 
@@ -216,17 +226,27 @@
 		
 		 &__m-wrap h1{
 		 	font-size: 55px;
+		 	bottom: 514px;
+    		right: -180px;
 		 }
 
 		  &__m-wrap span{
 		 	font-size: 100px;
-		 	bottom: 38px;
+		 	bottom: -26px;
+		 	right: 142px;
 		 }
 
 		  &__m-wrap h2{
 		 	font-size: 16px;
 		 	letter-spacing: 5px;
+		 	right: -183px;
+		 	bottom: 514px;
 		 }
+
+		 &__button {
+		    bottom: 215px;
+		    right: -186px;
+		}
 
 		 &__m-wrap a {
 		    bottom: 200px;
@@ -310,12 +330,12 @@
 		 	text-align: center;
 		 	right: 0;
 		 	left: 0;
-		 	bottom: 880px;
+		 	bottom: 625px;
 		 }
 
 		&__m-wrap span{
 		 	font-size: 90px;
-		 	bottom: 30px;
+		 	bottom: -15px;
 		 	text-align: center;
 		 	right: 0;
 		 	left: 0;
@@ -327,11 +347,12 @@
 		 	text-align: center;
 		 	right: 0;
 		 	left: 0;
-		 	bottom: 400px;
+		 	bottom: 610px;
 		 }
 
 		&__button {
-		    bottom: 150px;
+		    bottom: 260px;
+		    left: 0;
 		}
 
 		&__m-wrap a {
@@ -366,7 +387,11 @@
 	.head {
 
 		&__m-wrap h1 {
-		    bottom: 620px;
+		    bottom: 605px;
+		}
+
+		&__m-wrap span {
+		    bottom: -20px;
 		}
 
 		&__m-wrap h2 {
@@ -374,7 +399,8 @@
 		}
 
 		&__button {
-		    bottom: 102px;
+		    bottom: 240px;
+		    left: 0;
 		}
 	}
 }
@@ -386,19 +412,24 @@
 
 		 &__m-wrap h1{
 		 	font-size: 35px;
-		 	bottom: 550px;
+		 	bottom: 590px;
 		 }
 
 		  &__m-wrap span{
 		 	font-size: 80px;
-		 	bottom: 38px;
+		 	bottom: -12px;
 		 }
 
 		  &__m-wrap h2{
 		 	font-size: 14px;
 		 	letter-spacing: 3px;
-		 	bottom: 525px;
+		 	bottom: 576px;
 		 }
+
+		 &__button {
+		    bottom: 220px;
+		    left: 0;
+		}
 
 
 	} // head end
@@ -409,22 +440,23 @@
 
 		 &__m-wrap h1{
 		 	font-size: 30px;
-		 	bottom: 320px;
+		 	bottom: 590px;
 		 }
 
 		  &__m-wrap span{
 		 	font-size: 70px;
-		 	bottom: 38px;
+		 	bottom: -8px;
 		 }
 
 		  &__m-wrap h2{
 		 	font-size: 13px;
 		 	letter-spacing: 0;
-		 	bottom: 300px;
+		 	bottom: 580px;
 		 }
 
 		 &__button {
-		    bottom: 150px;
+		    bottom: 255px;
+		    left: 0;
 		}
 
 
@@ -437,23 +469,24 @@
 
 		 &__m-wrap h1{
 		 	font-size: 30px;
-		 	bottom: 36%;
-    		top: 54%;
+		 	bottom: 675px;
+
 		 }
 
 		  &__m-wrap span{
 		 	font-size: 70px;
-		 	/* bottom: 38px; */
+		 	bottom: -10px; 
 		 }
 
 		  &__m-wrap h2{
 		 	font-size: 13px;
 		 	letter-spacing: 0;
-		 	bottom: 36%;
+		 	bottom: 660px;
 		 }
 
 		 &__button {
-		    bottom: 230px;
+		    bottom: 360px;
+		    left: 0;
 		}
 
 

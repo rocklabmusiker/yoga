@@ -13,12 +13,12 @@
 	z-index: 100;
 	
 	&__m-wrap h4{
-	    bottom: 460px;
+	    bottom: -160px;
 	    color: #390a45;
 	    font-size: 75px;
 	    font-weight: 400;
-	    left: 102px;
-	    position: absolute;
+	    left: -251px;
+	    position: relative;
 	    z-index: 100;
 
 	}
@@ -26,13 +26,13 @@
 	&__m-wrap span{
 	   display: block;
 	  	font-size: 120px; 
-		left: 0;
-		position: absolute;
-		bottom: 80px;
+		left: -219px;
+		position: relative;
+		bottom: -9px;
 	}
 
 	&__button {
-		bottom: -530px;
+		bottom: -312px;
     	left: 102px;
     	position: relative;
 	}
@@ -53,7 +53,7 @@
 
 	&__m-wrap img{
 	    display: block;
-	    left: 351px;
+	    left: 352px;
 	    position: absolute;
 	    width: 95px;
 	    z-index: 1000;
@@ -66,29 +66,22 @@
 		height: 800px;
 		
 		&__m-wrap h4{
-	    bottom: 460px;
-	    font-size: 65px;
-	    left: 102px;
+		    bottom: -130px;
+		    font-size: 55px;
+    		left: -134px;
 		}
 
 		&__m-wrap span{
-		  	font-size: 110px; 
-			left: 0;
-			bottom: 50px;
+		  	font-size: 100px; 
+			left: -147px;
+			bottom: -10px;
 		}
 
 		&__button {
-			bottom: -530px;
+			bottom: -220px;
 	    	left: 102px;
 		}
 
-		&__m-wrap h4 {
-		    bottom: 530px;
-		}
-
-		&__button {
-		    bottom: -446px;
-		}
 
 		&__m-wrap a{
 		    font-size: 19px;
@@ -114,7 +107,7 @@
 		height: 600px;
 		
 		&__m-wrap h4{
-	    bottom: 770px;
+	    bottom: -85px;
 	    font-size: 45px;
 	    left: 0;
 	    right: 0;
@@ -125,12 +118,12 @@
 		  	font-size: 90px; 
 			left: 0;
 			right: 0;
-			bottom: 42px;
+			bottom: -8px;
 			text-align: center;
 		}
 
 		&__button {
-			bottom: -300px;
+			bottom: -155px;
 	    	left: 0;
 	    	right: 0;
 	    	margin: 0 auto;
@@ -163,17 +156,17 @@
 	.online {
 
 		&__m-wrap span {
-			bottom: 35px;
+			bottom: -4px;
 		    font-size: 70px;
 		}
 
 		&__m-wrap h4 {
-		    bottom: 770px;
+		    bottom: -120px;
 		    font-size: 35px;
 		}
 
 		&__button {
-		    bottom: -317px;
+		    bottom: -200px;
 		}
 
 		&__m-wrap a {
@@ -198,16 +191,16 @@
 		
 		&__m-wrap h4{
 	    	font-size: 35px;
-	    	bottom: 700px;
+	    	bottom: -120px;
 		}
 
 		&__m-wrap span{
 		  	font-size: 80px;
-		  	bottom: 38px; 
+		  	bottom: -6px; 
 		}
 
 		&__button {
-		    bottom: -350px;
+		    bottom: -200px;
 		}
 
 
@@ -234,12 +227,12 @@
 		
 		&__m-wrap h4{
 	    	font-size: 25px;
-	    	bottom: 420px;
+	    	bottom: -260px;
 		}
 
 		&__m-wrap span{
 		  	font-size: 50px;
-		  	bottom: 30px; 
+		  	bottom: 0; 
 		}
 
 		&__button {
@@ -269,13 +262,18 @@
 		height: 400px;
 		
 		&__m-wrap h4{
-	    	bottom: 53%;
-    		top: 40%;
+	    	bottom: -230px;
 		}
 
-		/* &__button {
+		&__m-wrap span{
+	    	bottom: 0;
+		}
+
+
+
+		&__button {
 		    bottom: -300px;
-		} */
+		} 
 
 	}
 
