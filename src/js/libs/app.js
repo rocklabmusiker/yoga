@@ -92,6 +92,9 @@ $(".online__button a").click(function() {
     $(this).css({opacity: "0"});
     $(".online__m-wrap h4").css({opacity: "0"});
     $(".online__m-wrap img").css({opacity: "0"});
+    $(".online__video p").css({
+      opacity: "1",
+      transition: "all .5s"});
     $(".online__video iframe").css({
       opacity: "1",
       transition: "all .5s"
@@ -99,6 +102,23 @@ $(".online__button a").click(function() {
 
 });
 
+$(".online__video p").click(function() {
+    $(this).css({opacity: "0"});
+    $(".online__button a").css({
+      opacity: "1",
+      transition: "all .5s"});
+    $(".online__m-wrap h4").css({
+      opacity: "1",
+      transition: "all .5s"});
+    $(".online__m-wrap img").css({
+      opacity: "1",
+      transition: "all .5s"});
+    $(".online__video iframe").css({
+      opacity: "0",
+      transition: "all .5s"
+    });
+
+});
 
 
  // функции локации
@@ -155,7 +175,9 @@ jQuery(document).ready(function() {
           return false;
         });
 
-
+// hide-pre-loader
+    document.getElementsByTagName('body')[0].className += ' pre-loaded';
+    console.log('main-js.injected');
 
 // ======скрипты form=======
 

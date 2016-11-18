@@ -1,3 +1,30 @@
 @import "mixins/base-mixins";
 @import "mixins/media-mixins";
 @import "sprites/png-sprite";
+
+
+// ======стили для Pop up=======
+
+.arcticmodal-container,.arcticmodal-overlay{
+	position:fixed;
+	left:0;top:35%;right:0;bottom:0;
+	z-index:1000;
+	height: 200px;
+	max-width: 400px;
+	color: #FFF;
+	margin: 0 auto;
+	border: 2px solid #fff;	
+}
+.arcticmodal-container{
+	overflow:auto;
+	font-size: 16px;
+    margin: 0 auto;
+	padding:0;
+	border:0;
+	border-collapse:collapse;
+	}
+:first-child+html .arcticmodal-container{height:100%;}
+.arcticmodal-container_i{margin:0 auto;height:100%;}
+.arcticmodal-container_i2{padding:0;margin:0;border:0;vertical-align:middle;}
+#hidden-box{display:none;}
+.error-input{border: 1px solid red;}

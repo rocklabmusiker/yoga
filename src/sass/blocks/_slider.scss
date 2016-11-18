@@ -6,9 +6,9 @@
 .slider__wrap {
     background-image: url(../images/slider/slider_back.jpg);
     background-repeat: no-repeat;
-    -webkit-background-size: center;
-         -o-background-size: center;
-            background-size: center;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
     background-position: 50% 0;
     height: 100vh;
 }
@@ -24,17 +24,11 @@
     }
 }
 
-/** VARIABLES 
-===================================*/
-/** RESET AND LAYOUT
-===================================*/
 .bx-wrapper {
   position: relative;
   margin: 0 auto 60px;
   padding: 0;
   *zoom: 1;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
 }
 
 .slider__m-wrap .bx-wrapper {
