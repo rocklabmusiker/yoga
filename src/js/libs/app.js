@@ -82,6 +82,23 @@ $('.slider2').bxSlider({
 });
 
 
+  // flip
+
+  $(".demo").flip();
+
+// video
+
+$(".online__button a").click(function() {
+    $(this).css({opacity: "0"});
+    $(".online__m-wrap h4").css({opacity: "0"});
+    $(".online__m-wrap img").css({opacity: "0"});
+    $(".online__video iframe").css({
+      opacity: "1",
+      transition: "all .5s"
+    });
+
+});
+
 
 
  // функции локации

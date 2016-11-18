@@ -39,7 +39,7 @@
 		color: #390a45;
 	    font-size: 75px;
 	    position: relative;
-	    bottom: 590px;
+	    bottom: 580px;
 		right: -270px;
     	font-size: 83px;
 	    z-index: 100;
@@ -60,7 +60,7 @@
 		font-size: 20px;
 		letter-spacing: 9px;
 		position: relative;
-	    bottom: 590px;
+	    bottom: 580px;
     	right: -262px;
 	    z-index: 100;
 	    font-weight: 400;
@@ -87,6 +87,18 @@
 	    text-align: center;
 	    line-height: 94px;
 	    min-width: 300px;
+	}
+
+	&__m-wrap a:hover{
+		color: #fff; 
+		border: 2px solid #fff;
+		background-color: rgba(57, 11, 70, .5);
+		-webkit-transition: all .5s ease;
+		   -moz-transition: all .5s ease;
+		    -ms-transition: all .5s ease;
+		     -o-transition: all .5s ease;
+		        transition: all .5s ease;
+	   
 	}
 
 	&__m-wrap img {

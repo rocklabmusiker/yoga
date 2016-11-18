@@ -80,6 +80,17 @@
 		font-weight: bold;
 	}
 
+	&__form button:hover{
+		color: #fff; 
+		background-color: rgba(57, 11, 70, .5);
+		-webkit-transition: all .5s ease;
+		   -moz-transition: all .5s ease;
+		    -ms-transition: all .5s ease;
+		     -o-transition: all .5s ease;
+		        transition: all .5s ease;
+	   
+	}
+
 	&__form img{
 		position: absolute;
 		width: 70px;

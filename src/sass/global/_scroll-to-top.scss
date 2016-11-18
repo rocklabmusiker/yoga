@@ -1,0 +1,29 @@
+
+a.back-to-top {
+	display: block;
+	 width: 32px;
+	 height: 32px;
+     text-indent: -9999px;
+	 position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: url(../../images/scroll-to-top/arrow.png);
+	background-repeat: no-repeat;
+	background-position: center 43%;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+}
+
+a.back-to-top:hover{
+	background-color: #fff;
+}
+
+a.back-to-top:focus{
+	outline: 0;
+}
+
+a.back-to-top:active{
+	outline: 0;
+}
