@@ -12,6 +12,10 @@
 	height: 100vh;
 	z-index: 100;
 	
+	&__m-wrap{
+	    position: relative;
+	}
+
 	&__m-wrap h4{
 	    bottom: -160px;
 	    color: #390a45;
@@ -72,34 +76,37 @@
 
 	&__video {
 		position: relative;
-		max-width: 800px;
 		width: 100%;
-		max-height: 600px;
-		height: 50vh;
-		margin: 0 auto;
+		height: 100vh;
+		margin: -234px auto 0;
 	}
 
 	&__video iframe{
-		max-width: 800px;
-		width: 90%;
-		max-height: 600px;
-		height: 50vh;
+		width: 100%;
+		height: 100vh;
 		text-align: center;
-		margin: 0 auto;
+		margin: -234px auto 0;
 		display: block;
 		opacity: 0;
 	}
 
-	&__video p{
-		position: relative;
+	&__video-close {
+	    position: relative;
+	    width: 100%;
+	}
+
+	&__video-close p{
+		position: absolute;
 		display: block;
 		opacity: 0;
-		width: 50px;		
-		font-size: 30px;
+		width: 80px;		
+		font-size: 50px;
 		z-index: 1000;
 		font-weight: bold;
 		color: #FFF;
 		right: 0;
+		background-color: #390b46;
+    	bottom: -55px;
 		cursor: pointer;
 		text-align: center;
 	}
@@ -139,6 +146,20 @@
 		&__m-wrap img{
 		    left: 305px;
 		    width: 90px;
+		}
+
+		&__video {
+			height: 800px;
+		}
+
+		&__video iframe{
+			height: 800px;
+		}
+
+		&__video-close p{
+			 bottom: -90px;
+		    font-size: 35px;
+		    width: 70px;
 		}	 
 
 	}
@@ -191,7 +212,21 @@
 		    width: 80px;
 		    right: -317px;
 		    margin: 0 auto;
-		}	 
+		}
+
+		&__video {
+			height: 600px;
+		}
+
+		&__video iframe{
+			height: 600px;
+		}
+
+		&__video-close p{
+			bottom: -108px;
+		    font-size: 30px;
+		    width: 60px;
+		}		 
 
 	}
 
@@ -224,6 +259,20 @@
 		&__m-wrap img {
 		    right: -266px;
 		    width: 70px;
+		}
+
+		&__video {
+			height: 500px;
+		}
+
+		&__video iframe{
+			height: 500px;
+		}
+
+		&__video-close p{
+			bottom: -135px;
+		    font-size: 23px;
+		    width: 50px;
 		}	
     
 	}
@@ -259,7 +308,21 @@
 		&__m-wrap img{
 		    width: 60px;
 		    right: -251px;
-		}	 
+		}
+
+		&__video {
+			height: 450px;
+		}
+
+		&__video iframe{
+			height: 450px;
+		}
+
+		&__video-close p{
+			bottom: -125px;
+		    font-size: 23px;
+		    width: 50px;
+		}		 
 
 	}
 
@@ -295,6 +358,12 @@
 		&__m-wrap img{
 		    width: 40px;
 		    right: -200px;
+		}
+
+		&__video-close p{
+			bottom: -170px;
+		    font-size: 23px;
+		    width: 50px;
 		}	 
 
 	}

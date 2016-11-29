@@ -170,3 +170,14 @@ gulp.task('watch', function () {
 gulp.task('start', ['build', 'browser-sync', 'watch']);
 
 
+gulp.task('img', function () {
+    gulp.src('src/images/time/*.*')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()],
+            interlaced: true
+        }))
+        .pipe(gulp.dest('build/images/time'))
+        
+});

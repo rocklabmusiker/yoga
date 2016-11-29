@@ -19,7 +19,7 @@
 
 	&__m-wrap p{
 		text-align: center;
-		padding-top: 45px;
+		padding: 45px 10px 0 10px;
 	}
 
 	&__content {
@@ -52,12 +52,13 @@
 		position: absolute;
 		width: 100%;
 		height: 410px;
-		background-color: rgba(57,11,70,.8);
+		background-color: rgba(57,11,70,1);
 		text-align: center;
 		color: #FFF;
 		opacity: 0;
 		z-index: 100;
 	} 
+
 
 	&__hover b{
 		display: block;
@@ -83,6 +84,31 @@
 		     -o-transition: all 1s ease;
 		        transition: all 1s ease;
 		
+	}
+
+	&__hover1 {
+		background-image: url(../../images/time/time_hover1.png);
+		background-repeat: no-repeat;
+	}
+
+	&__hover2 {
+		background-image: url(../../images/time/time_hover2.png);
+		background-repeat: no-repeat;
+	}
+
+	&__hover3 {
+		background-image: url(../../images/time/time_hover3.png);
+		background-repeat: no-repeat;
+	}
+
+	&__hover4 {
+		background-image: url(../../images/time/time_hover4.png);
+		background-repeat: no-repeat;
+	}
+
+	&__hover5 {
+		background-image: url(../../images/time/time_hover5.png);
+		background-repeat: no-repeat;
 	}
 
 

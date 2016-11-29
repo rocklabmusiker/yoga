@@ -5,6 +5,12 @@
 	}
 }
 
+@mixin max_1300 {
+	@media only screen and(max-width: 1300px){
+		@content;
+	}
+}
+
 
 @mixin max_1200 {
 	@media only screen and(max-width: 1200px){

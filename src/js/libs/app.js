@@ -90,14 +90,15 @@ $('.slider2').bxSlider({
 
 $(".online__button a").click(function() {
     $(this).css({opacity: "0"});
+    $(".online").css({background: "#fff"});
     $(".online__m-wrap h4").css({opacity: "0"});
     $(".online__m-wrap img").css({opacity: "0"});
     $(".online__video p").css({
       opacity: "1",
-      transition: "all .5s"});
+      transition: "all 1s"});
     $(".online__video iframe").css({
       opacity: "1",
-      transition: "all .5s"
+      transition: "all 1s"
     });
 
 });
@@ -106,6 +107,9 @@ $(".online__video p").click(function() {
     $(this).css({opacity: "0"});
     $(".online__button a").css({
       opacity: "1",
+      transition: "all .5s"});
+    $(".online").css({
+      backgroundImage: "url(../../images/online_back.jpg)",
       transition: "all .5s"});
     $(".online__m-wrap h4").css({
       opacity: "1",

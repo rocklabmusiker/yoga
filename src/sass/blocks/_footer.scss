@@ -34,7 +34,7 @@
 	&__form {
 		display: block;
 		float: right;
-		margin: 0 100px 0 0;
+		margin: 50px 100px 0 0;
 	}
 
 	&__form input{
@@ -148,6 +148,18 @@
 #hidden-box {
 	display: none;
 }
+
+@include max_1300 {
+	.footer {
+		&__form {
+		    display: block;
+			float: right;
+		    margin: -10px 100px 0 0;
+		}
+	}
+
+}
+
 
 @include max_1200 {
 	.footer {
@@ -370,5 +382,9 @@
 @include max_320 {
 	.form {
 		margin: 0 0 -10px;
+	}
+
+	.section .wrap .m-wrap {
+	    margin: -18px auto 0;
 	}
 }

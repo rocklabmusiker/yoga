@@ -2,6 +2,7 @@
 @import "mixins/media-mixins";
 @import "sprites/png-sprite"; 
 
+
 .head {
 	&__wrap {
 		position: relative;
@@ -39,7 +40,7 @@
 		color: #390a45;
 	    font-size: 75px;
 	    position: relative;
-	    bottom: 580px;
+	    bottom: 560px;
 		right: -270px;
     	font-size: 83px;
 	    z-index: 100;
@@ -47,7 +48,7 @@
 	}
 
 	&__m-wrap span{
-	    bottom: -27px;
+	    bottom: -30px;
     	right: 244px;
 	    display: block;
 	    font-size: 120px;
@@ -60,7 +61,7 @@
 		font-size: 20px;
 		letter-spacing: 9px;
 		position: relative;
-	    bottom: 580px;
+	    bottom: 560px;
     	right: -262px;
 	    z-index: 100;
 	    font-weight: 400;
@@ -68,7 +69,7 @@
 
 	&__button {
 		position: relative;
-		bottom: 295px;
+		bottom: 275px;
 		right: -105px;
 		
 	}
@@ -78,7 +79,7 @@
 		font-size: 20px;
 		position: absolute;
 		border: 2px solid #390a45;
-	    bottom: 160px;
+	    bottom: 140px;
 	    height: 94px;
 	    right: 410px;
 	    width: 25%;
@@ -102,7 +103,7 @@
 	}
 
 	&__m-wrap img {
-	    bottom: 159px;
+	    bottom: 140px;
 	    display: block;
 	    position: absolute;
 	    right: 363px;
@@ -211,23 +212,39 @@
 @include max_1500 {
  	.head {
  		&__m-wrap h1 {
-		    bottom: 590px;
-		    right: -149px;
+		    bottom: 540px;
+		    right: -214px;
+		    font-size: 78px;
 		}
 
 		&__m-wrap span {
-		    bottom: -27px;
-    		right: 244px;
+		    bottom: -30px;
+    		right: 230px;
+    		font-size: 115px;
 		}
 
 		&__m-wrap h2 {
-		    bottom: 590px;
-    		right: -141px;
+		    bottom: 540px;
+    		right: -204px;
+    		font-size: 18px;
 		}
 
 		&__button {
-		    bottom: 295px;
+		    bottom: 275px;
 		    right: 0;
+		}
+
+		&__m-wrap a {
+		    bottom: 140px;
+		    height: 80px;
+		    line-height: 80px;
+		    width: 23%;
+		}
+
+		&__m-wrap img {
+		    bottom: 140px;
+		    right: 370px;
+		    width: 80px;
 		}
  	}
 
