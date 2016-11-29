@@ -19,7 +19,7 @@
 		margin-left: 20px;
 	}
 
-	&__logo h4{
+	&__logo p{
 		color: #FFF;
 		font-size: 30px;
 		line-height: 110px;
@@ -129,9 +129,11 @@
 		margin: 0 20px 0 0;
 	}
 
-	&__item--active a{
+
+	&__item--active{
 		border-bottom: 1px solid #fff;
-		padding-bottom: 6px;
+		height: 57px;
+		display: inline-block;
 	}
 
 
@@ -333,6 +335,10 @@
 		&__button {
 			display: block;
 		}
+
+		&__item--active{
+			height: 21px;
+		}
 	}
 
 	.head {
@@ -344,7 +350,7 @@
 			padding: 38px 0 15px;
 		}
 
-		&__logo h4{
+		&__logo p{
 			text-align: center;
 			line-height: 0;
 			padding-left: 0;

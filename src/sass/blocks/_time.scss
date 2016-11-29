@@ -47,7 +47,7 @@
 		
 	}
 
-	&__hover span{
+	&__hover div{
 		display: block;
 		position: absolute;
 		width: 100%;
@@ -76,7 +76,7 @@
 		font-weight: bold;
 	} 
 
-	&__hover:hover span {
+	&__hover:hover div {
 		opacity: 1;
 		-webkit-transition: all 1s ease;
 		   -moz-transition: all 1s ease;

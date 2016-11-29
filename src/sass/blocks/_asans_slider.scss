@@ -38,7 +38,7 @@
 	padding: 0;
 }
 
-.slide span{
+.slide p{
 	position: absolute;
 	width: 100%;
 	display: block;
@@ -48,7 +48,7 @@
 	cursor: pointer;	
 }
 
-.slide:hover span{
+.slide:hover p{
 	opacity: 0;
 	-webkit-transition: all .4s ease;
 	   -moz-transition: all .4s ease;
@@ -58,7 +58,7 @@
 }
 
 .slide b,
-.slide p {
+.slide span {
 	display: block;
 	text-align: center;
 	color: #FFF;
@@ -70,7 +70,7 @@
 	padding-top: 60px;
 }
 
-.slide p {
+.slide span {
 	padding: 0;
 }
 

@@ -142,8 +142,8 @@ $(".online__video p").click(function() {
 jQuery(document).ready(function() {
   
 // remove class active  
-    $(".nav__list .nav__item").click(function() {
-        $(".nav__list .nav__item").removeClass('nav__item--active');
+    $(".nav__list .nav__item a").click(function() {
+        $(".nav__list .nav__item a").removeClass('nav__item--active');
         $(this).addClass('nav__item--active');
     });
 
@@ -180,7 +180,7 @@ jQuery(document).ready(function() {
         });
 
 // hide-pre-loader
-    document.getElementsByTagName('body')[0].className += ' pre-loaded';
+  document.getElementsByTagName('body')[0].className += ' pre-loaded';
     console.log('main-js.injected');
 
 // ======скрипты form=======
